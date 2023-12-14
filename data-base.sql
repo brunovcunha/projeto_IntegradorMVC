@@ -1,6 +1,12 @@
+-- SQLBook: Code
+-- Active: 1700922240653@@127.0.0.1@3306@thegame
 create database thegame;
-
 use thegame;
+create table login(
+cod_login int primary key auto_increment,
+login varchar(50),
+senha varchar(50)
+);
 
 create table jogador(
 cod_jogador int primary key auto_increment,
@@ -38,3 +44,5 @@ cod_jogador int,
 cod_cenario int,
 foreign key(cod_jogador) references jogador (cod_jogador),
 foreign key(cod_cenario) references cenario (cod_cenario));
+
+-- SQLBook: Markup
