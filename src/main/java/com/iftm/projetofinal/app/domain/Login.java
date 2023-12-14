@@ -8,12 +8,9 @@ import lombok.RequiredArgsConstructor;
 @Data
 @RequiredArgsConstructor
 public class Login {
-
     @NonNull
-    private String usuario;
+    private String login;
 
     @NonNull
     private String senha;
-
-    
 }
