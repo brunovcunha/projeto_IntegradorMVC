@@ -6,7 +6,7 @@ import lombok.Data;
 
 
 @Data
-public class Jogador {
+public class Jogadores {
     private Long cod_jogador;
 
     private String nome;
@@ -17,10 +17,10 @@ public class Jogador {
     private int pontuacao;
     private int moedas;
 
-    public Jogador() {
+    public Jogadores() {
     }
 
-    public Jogador(Long cod_jogador, String nome, String nickname, char sexo, String email, Date dt_nasc, int pontuacao, int moedas) {
+    public Jogadores(Long cod_jogador, String nome, String nickname, char sexo, String email, Date dt_nasc, int pontuacao, int moedas) {
         this.cod_jogador = cod_jogador;
         this.nome = nome;
         this.nickname = nickname;
