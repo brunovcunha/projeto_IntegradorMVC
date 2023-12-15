@@ -11,37 +11,37 @@ senha varchar(255)
 
 create table jogador(
     cod_jogador bigint primary key auto_increment,
-    apelido varchar(50),
+    nickname varchar(50),
     senha varchar(50),
     data_nasc date,
     pontuacao int
 );
 
 create table poder(
-    cod_poder int primary key auto_increment,
+    cod_poder bigint primary key auto_increment,
     habilidade varchar(50),
     descricao varchar(max)
 );
 
 create table adquire_habilidade(
-    cod_jogador int primary3 key,
-    cod_poder int primary key,
+    cod_jogador bigint primary3 key,
+    cod_poder bigint primary key,
     foreign key(cod_jogador) references jogador (cod_jogador),
     foreign key(cod_poder) references poder (cod_poder)
 );
 
 create table cenario(
-    cod_cenario int primary key auto_increment,
+    cod_cenario bigint primary key auto_increment,
     caracteristicas varchar(50),
     pontos_necessarios int
 );
 
 create table partida(
-    id_partida int primary key auto_increment,
-    duracao long,
+    id_partida bigint primary key auto_increment,
+    duracao bigint,
     pontos_obtidos int,
-    jogador int,
-    cenario int,
+    jogador bigint,
+    cenario bigint,
     foreign key(cod_jogador) references jogador (cod_jogador),
     foreign key(cod_cenario) references cenario (cod_cenario)
 );
