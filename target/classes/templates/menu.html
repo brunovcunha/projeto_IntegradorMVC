@@ -1,11 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Menus</title>
 </head>
+
 <body>
-    
+    <div>
+        <h2>Menus</h2>
+
+        <ul>
+            <li th:each="menuItem : ${menuItems}">
+                <a th:href="@{${menuItem.url}}" th:text="${menuItem.label}"></a>
+            </li>
+        </ul>
+    </div>
 </body>
+
 </html>

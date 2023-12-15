@@ -1,5 +1,4 @@
 package com.iftm.projetofinal.app.domain;
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -7,8 +6,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Cenario {
-    private int cod_cenario;
-    private String caracteristicas;
-    private int pontos_necessarios;
+public class AdquireHabilidade {
+    private int cod_jogador;
+    private int cod_poder;
 }
