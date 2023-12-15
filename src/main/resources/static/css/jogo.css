@@ -6,8 +6,7 @@
 }
 
 body{
-    background-image: url("../img/hCUwLQ.png");
-    background-size: 150%;
+    background-size: cover;
     color: white;
     height: 100%;
 }
@@ -51,4 +50,11 @@ button{
     outline: none;
     border: none;
     border-radius: 6px;
+    cursor: pointer;
+}
+button:disabled {
+    cursor: default;
+}
+.descricao {
+    text-shadow: 0px 0px 10px black;
 }
