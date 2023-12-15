@@ -38,5 +38,9 @@ public class LoginService {
         }
         return null;
     }
+
+    public void cadastrarUsuario(Login login) {
+        loginDao.cadastrarUsuario(login);
+    }
     
 }
