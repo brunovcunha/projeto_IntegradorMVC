@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Press+Start+2P&display=swap');*{
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
+}
+
+body{
+    background-image: url("../img/hCUwLQ.png");
+    background-size: 150%;
+    color: white;
+    height: 100%;
+}
+.container-jogadores{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+    gap: 124px;
+}
+h1{
+    text-align: center;
+    margin-top: 220px;
+}
+#jogador1{
+    display: flex;
+    flex-direction: row;
+}
+#jogador1 img{
+    transform: scaleX(-1);
+}
+#divBotoes{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4px;
+    margin-top: 230px;
+    padding: 12px;
+    font-size: 'pixelify sans', sans-serif;
+}
+button{
+    width: 120px;
+    padding: 8px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+}
